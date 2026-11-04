@@ -1,0 +1,7 @@
+branch,model,interaction_share
+original,XGBoost,0.248401939868927
+original,RandomForest,0.2710652483918897
+seasonal,XGBoost,0.2507539987564087
+seasonal,RandomForest,0.2743564313955449
+trend,XGBoost,0.167555570602417
+trend,RandomForest,0.08707835580870271

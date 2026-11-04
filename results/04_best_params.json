@@ -1,53 +1,56 @@
 {
   "original|XGBoost": {
-    "colsample_bytree": 0.9995388026271466,
-    "learning_rate": 0.015647203367978108,
-    "max_depth": 2,
-    "min_child_weight": 3,
-    "n_estimators": 739,
-    "subsample": 0.8462238257135377
+    "colsample_bytree": 0.7869378119471999,
+    "learning_rate": 0.003066396019416707,
+    "max_depth": 8,
+    "min_child_weight": 4,
+    "n_estimators": 2361,
+    "reg_lambda": 1.089853846878525,
+    "subsample": 0.36046388625944886
   },
   "original|RandomForest": {
-    "max_depth": 12,
-    "max_features": 0.5,
-    "min_samples_leaf": 1,
-    "n_estimators": 623
+    "max_depth": 8,
+    "max_features": 0.75,
+    "min_samples_leaf": 2,
+    "n_estimators": 428
   },
   "original|Ridge": {
-    "ridge__alpha": 3.727593720314938
+    "ridge__alpha": 5.011872336272725
   },
   "seasonal|XGBoost": {
-    "colsample_bytree": 0.6132889541064709,
-    "learning_rate": 0.18982766064933437,
-    "max_depth": 5,
-    "min_child_weight": 3,
-    "n_estimators": 594,
-    "subsample": 0.6922969341627183
+    "colsample_bytree": 0.30819985892950136,
+    "learning_rate": 0.005000846386103412,
+    "max_depth": 6,
+    "min_child_weight": 2,
+    "n_estimators": 2950,
+    "reg_lambda": 1.2137980202836665,
+    "subsample": 0.33803659183747753
   },
   "seasonal|RandomForest": {
     "max_depth": 12,
-    "max_features": 0.5,
-    "min_samples_leaf": 1,
-    "n_estimators": 623
+    "max_features": 0.33,
+    "min_samples_leaf": 2,
+    "n_estimators": 935
   },
   "seasonal|Ridge": {
-    "ridge__alpha": 2.682695795279722
+    "ridge__alpha": 0.5011872336272725
   },
   "trend|XGBoost": {
-    "colsample_bytree": 0.9166900152330658,
-    "learning_rate": 0.048764991758354435,
-    "max_depth": 2,
-    "min_child_weight": 2,
-    "n_estimators": 737,
-    "subsample": 0.6284144232791548
+    "colsample_bytree": 0.8936057605255641,
+    "learning_rate": 0.08746296159805558,
+    "max_depth": 6,
+    "min_child_weight": 4,
+    "n_estimators": 2695,
+    "reg_lambda": 0.013579680155845203,
+    "subsample": 0.9878024718776355
   },
   "trend|RandomForest": {
-    "max_depth": 12,
+    "max_depth": null,
     "max_features": 1.0,
-    "min_samples_leaf": 1,
-    "n_estimators": 428
+    "min_samples_leaf": 2,
+    "n_estimators": 686
   },
   "trend|Ridge": {
-    "ridge__alpha": 0.0001
+    "ridge__alpha": 1e-06
   }
 }

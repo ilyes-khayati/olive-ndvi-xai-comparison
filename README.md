@@ -8,6 +8,11 @@ attributions compared.
 Companion to `olive-ndvi-wavelet-xai`, which reproduces the framework this work
 builds on. That repository is frozen; this one is not a reproduction.
 
+This is the olive half of a two-site comparison. The forest half is
+[`forest-ndvi-xai-comparison`](https://github.com/ilyes-khayati/forest-ndvi-xai-comparison);
+notebooks 01–05 run the same code at both sites (protocol in its README), so
+differences between the sites come from the vegetation, not from the pipeline.
+
 ## Study area
 
 `olive-jendouba-polygon.geojson` — 0.644 km², delineated by hand on
@@ -25,7 +30,25 @@ NDVI pixels at 250 m, and 0.64 of one MODIS LST pixel at 1 km.
 07  rashomon                explanations across equally good configurations
 08  synthetic ground truth  which explanation recovers known importances
 
-## Setup
+Notebooks 01–05 follow the shared two-site protocol. Notebooks 06–08 are olive-only
+extensions; their saved outputs come from the earlier protocol (branch `master`)
+and have not been re-run on this one.
 
-Uses the virtual environment from `olive-ndvi-wavelet-xai`. Select the
-`olive-venv` kernel.
+## Running it
+
+```sh
+git clone https://github.com/ilyes-khayati/olive-ndvi-xai-comparison.git
+cd olive-ndvi-xai-comparison
+python3.12 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python -m ipykernel install --user --name olive-xai
+```
+
+Open the notebooks with the `olive-xai` kernel and run them in order from 02. The
+extracted series in `data/raw/` are committed, so no Earth Engine account is needed.
+Notebook 01 re-extracts them and needs one:
+
+```sh
+earthengine authenticate
+export EE_PROJECT=<your Earth Engine project id>
+```
