@@ -1,38 +1,69 @@
 # olive-ndvi-xai-comparison
 
-Do different model classes explain the same wavelet-decomposed NDVI signal the
-same way? XGBoost, Random Forest and Ridge regression are fitted to identical
-inputs at a delineated olive orchard in Jendouba, Tunisia, and their feature
-attributions compared.
+**Do different machine-learning models explain the same NDVI forecast the same way, and does
+the answer change with the vegetation?**
 
-Companion to `olive-ndvi-wavelet-xai`, which reproduces the framework this work
-builds on. That repository is frozen; this one is not a reproduction.
+XGBoost, Random Forest and Ridge regression forecast next month's NDVI from identical inputs
+at a hand-delineated olive orchard in Jendouba, Tunisia. Their explanations are then compared,
+each against how much it changes when the same model is simply refitted.
 
-This is the olive half of a two-site comparison. The forest half is
-[`forest-ndvi-xai-comparison`](https://github.com/ilyes-khayati/forest-ndvi-xai-comparison);
-notebooks 01–05 run the same code at both sites (protocol in its README), so
-differences between the sites come from the vegetation, not from the pipeline.
+This is the **olive half** of a two-site study. The forest half is
+[`forest-ndvi-xai-comparison`](https://github.com/ilyes-khayati/forest-ndvi-xai-comparison).
+Notebooks 01–05 run the same code at both sites, so any difference between them comes from the
+vegetation, not from the pipeline. It builds on `olive-ndvi-wavelet-xai`, a frozen reproduction
+of the framework.
+
+![Two-site summary](docs/two_sites.png)
+
+## Findings
+
+- **The two tree models agree with each other; both disagree with Ridge.** Weighted Kendall τ
+  between importance rankings is 0.93 for XGBoost vs Random Forest, and 0.46–0.54 for tree vs
+  Ridge. Each model agrees with itself at 0.96 or more when refitted with other seeds.
+- **The disagreement is land-surface temperature (LST).** A linear screen rejected LST, and
+  Ridge gives it 5% of its importance. The tree models give it 39–61%, and refitting them
+  without LST raises their error by 22–36%.
+- **In the orchard, the trees use the weather in LST, not just the season.** Replacing LST by
+  its monthly climatology recovers only 18–38% of its value. The trees' response steps down
+  near 21 °C and again near 31 °C: heat and dry-season limits.
+- **In the forest, the same predictor is a seasonal clock**, with a threshold near 15 °C. Same
+  models, same pipeline, opposite mechanism.
+
+| Test 2022–2024 | XGBoost | Random Forest | Ridge | Climatology | Persistence |
+|---|---|---|---|---|---|
+| R² | 0.88 | 0.86 | 0.86 | 0.77 | 0.62 |
+| MAE (NDVI) | 0.037 | 0.037 | 0.047 | 0.047 | 0.070 |
+
+![SHAP dependence, original series](docs/dependence.png)
+
+*How each model responds to its main predictors. The trees turn LST into steps near 21 °C and
+31 °C; Ridge can only draw a straight line.*
 
 ## Study area
 
-`olive-jendouba-polygon.geojson` — 0.644 km², delineated by hand on
-high-resolution imagery where the olive planting grid is visible. About 10 MODIS
-NDVI pixels at 250 m, and 0.64 of one MODIS LST pixel at 1 km.
+`olive-jendouba-polygon.geojson` covers 0.644 km², drawn by hand on high-resolution imagery
+where the olive planting grid is visible.
+
+- **NDVI** (MODIS, 250 m): about 10 pixels, so the orchard is resolved.
+- **LST** (MODIS, 1 km): 0.64 of one pixel, so LST includes the surroundings.
 
 ## Notebooks
 
-01  data acquisition        polygon extraction, MODIS quality screening, SPEI 1-48 months
-02  wavelet decomposition   discrete Meyer at native cadence; look-ahead quantified
-03  feature derivation      every predictor justified from evidence; drought memory
-04  model training          XGBoost, Random Forest, Ridge; noise floor; rolling origin
-05  attribution             permutation, drop-column, grouped and SHAP, across models
-06  selection               stratified, and Ridge weights as a neutral selector
-07  rashomon                explanations across equally good configurations
-08  synthetic ground truth  which explanation recovers known importances
+| | Notebook | What it does |
+|---|---|---|
+| 01 | data acquisition | polygon extraction, per-pixel quality mask, SPEI 1–48 months |
+| 02 | wavelet decomposition | discrete Meyer at native cadence; look-ahead of the trend measured |
+| 03 | feature derivation | every predictor justified from evidence; drought memory |
+| 04 | model training | three models, baselines, noise floor, rolling origin |
+| 05 | attribution | explanations across models, and what each model needs |
+| 06 | selection | stratified selection, and Ridge weights as a neutral selector |
+| 07 | rashomon | explanations across equally good configurations |
+| 08 | synthetic ground truth | which explanation recovers known importances |
 
-Notebooks 01–05 follow the shared two-site protocol. Notebooks 06–08 are olive-only
-extensions; their saved outputs come from the earlier protocol (branch `master`)
-and have not been re-run on this one.
+Notebooks 01–05 follow the shared two-site protocol, described in the
+[forest README](https://github.com/ilyes-khayati/forest-ndvi-xai-comparison#protocol).
+Notebooks 06–08 are olive-only extensions. Their saved outputs come from the earlier protocol
+and have not yet been re-run on this one.
 
 ## Running it
 
@@ -44,11 +75,23 @@ pip install -r requirements.txt
 python -m ipykernel install --user --name olive-xai
 ```
 
-Open the notebooks with the `olive-xai` kernel and run them in order from 02. The
-extracted series in `data/raw/` are committed, so no Earth Engine account is needed.
-Notebook 01 re-extracts them and needs one:
+Open the notebooks with the `olive-xai` kernel and run them in order from 02. The extracted
+series in `data/raw/` are committed, so no Earth Engine account is needed. Notebook 01
+re-extracts them and needs one:
 
 ```sh
 earthengine authenticate
 export EE_PROJECT=<your Earth Engine project id>
 ```
+
+## Limitations
+
+- The trend branch is built by a two-sided filter, so its scores include look-ahead (measured
+  in notebook 02). No forecasting claim is made on it.
+- LST is coarser than the orchard, yet it is the predictor the trees rely on most.
+- One orchard. The result is a case study until it is repeated on other orchards.
+
+## Author
+
+Ilyes Khayati. Data: MODIS MOD13Q1 and MOD11A2 (NASA LP DAAC, via Google Earth Engine),
+SPEIbase v2.11, ESA WorldCover v200.
