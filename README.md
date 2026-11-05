@@ -91,6 +91,10 @@ export EE_PROJECT=<your Earth Engine project id>
 - LST is coarser than the orchard, yet it is the predictor the trees rely on most.
 - One orchard. The result is a case study until it is repeated on other orchards.
 
+## Licence
+
+Code under the MIT licence (see `LICENSE`). The MODIS, SPEI and WorldCover data keep their own terms.
+
 ## Author
 
 Ilyes Khayati. Data: MODIS MOD13Q1 and MOD11A2 (NASA LP DAAC, via Google Earth Engine),
