@@ -3,9 +3,13 @@
 **Do different machine-learning models explain the same NDVI forecast the same way, and does
 the answer change with the vegetation?**
 
-XGBoost, Random Forest and Ridge regression forecast next month's NDVI from identical inputs
-at a hand-delineated olive orchard in Jendouba, Tunisia. Their explanations are then compared,
-each against how much it changes when the same model is simply refitted.
+Five models, XGBoost, Random Forest, a support vector machine for regression (SVR), a small
+neural network (MLP) and Ridge regression, forecast next month's NDVI from identical inputs at
+a hand-delineated olive orchard in Jendouba, Tunisia, on the series and on its seasonal and
+trend components. Their explanations are compared with each other, each against how much it
+changes when the same model is simply refitted, and with SARIMAX, an interpretable seasonal
+ARIMA specified and explained before the other models. The study is about explanations, not
+about which model forecasts best.
 
 This is the **olive half** of a two-site study. The forest half is
 [`forest-ndvi-xai-comparison`](https://github.com/ilyes-khayati/forest-ndvi-xai-comparison).
@@ -16,6 +20,23 @@ of the framework.
 ![Two-site summary](docs/two_sites.png)
 
 ## Findings
+
+**Olive, five models and SARIMAX (notebooks 04–05):**
+
+- **All five models agree with SARIMAX on direction.** A warmer previous month lowers the
+  forecast and a wetter SPEI-6 raises it, as SARIMAX's significant coefficients say
+  (−0.0044 NDVI per °C, p = 0.002; +0.013 per SPEI unit, p < 0.001).
+- **They agree on what matters, not on how much.** All five rank last month's LST, last
+  month's NDVI and NDVI two years earlier first. LST's share of importance runs from 76% and
+  61% (Random Forest, XGBoost) to 17% (MLP, SVR) and 9% (Ridge).
+- **Two families of explanation.** Trees agree with trees (τ 0.93), MLP with SVR (0.92) and both
+  with Ridge (0.65–0.72); trees with the others only 0.46–0.61, beyond refitting noise.
+- **SPEI matters little to every model** (1–3%), though significant in SARIMAX: a real but
+  four times smaller effect than LST's, ranked the same way by all six models.
+- **The trend component is explained by its own past** (96–100%), and there the explanations
+  are unstable.
+
+**Olive and forest, three models (shared protocol):**
 
 - **The two tree models agree with each other; both disagree with Ridge.** Weighted Kendall τ
   between importance rankings is 0.93 for XGBoost vs Random Forest, and 0.46–0.54 for tree vs
@@ -54,16 +75,18 @@ where the olive planting grid is visible.
 | 01 | data acquisition | polygon extraction, per-pixel quality mask, SPEI 1–48 months |
 | 02 | wavelet decomposition | discrete Meyer at native cadence; look-ahead of the trend measured |
 | 03 | feature derivation | every predictor justified from evidence; drought memory |
-| 04 | model training | three models, baselines, noise floor, rolling origin |
-| 05 | attribution | explanations across models, and what each model needs |
+| 04 | model training | SARIMAX specified and explained first; five models; accuracy as context |
+| 05 | attribution | explanations across the five models, and against SARIMAX |
 | 06 | selection | stratified selection, and Ridge weights as a neutral selector |
 | 07 | rashomon | explanations across equally good configurations |
 | 08 | synthetic ground truth | which explanation recovers known importances |
 
 Notebooks 01–05 follow the shared two-site protocol, described in the
-[forest README](https://github.com/ilyes-khayati/forest-ndvi-xai-comparison#protocol).
-Notebooks 06–08 are olive-only extensions. Their saved outputs come from the earlier protocol
-and have not yet been re-run on this one.
+[forest README](https://github.com/ilyes-khayati/forest-ndvi-xai-comparison#protocol); SARIMAX,
+SVR and the MLP have so far been added at the olive site only. Notebooks 06–08 are olive-only
+extensions on XGBoost, Random Forest and Ridge; all saved outputs come from the current
+protocol. Every notebook explains its choices with references and ends with its limitations;
+the full bibliography is in [`docs/references.md`](docs/references.md).
 
 ## Running it
 
@@ -86,12 +109,24 @@ export EE_PROJECT=<your Earth Engine project id>
 
 ## Limitations
 
-- The trend branch is built by a two-sided filter, so its scores include look-ahead (measured
-  in notebook 02). No forecasting claim is made on it.
-- LST is coarser than the orchard, yet it is the predictor the trees rely on most.
-- One orchard. The result is a case study until it is repeated on other orchards.
+Each notebook lists its own; the main ones:
+
+- **Explanations describe models, not the orchard.** What a model relies on is not thereby a
+  cause of NDVI.
+- **Two-sided components.** The wavelet filter uses later months (measured in notebook 02), so
+  the seasonal and trend branches describe the components, not a real-time forecast.
+- **Composite timing.** A MODIS composite is dated by the first day of its window, so part of
+  last month's NDVI can come from the month being forecast (measured in notebook 02).
+- **Coarse climate.** LST covers 0.64 of one 1 km pixel and SPEI one 0.5° cell, yet LST is the
+  predictor the models rely on most.
+- **SARIMAX is a sound reference on the original series only**; on the components it is poorly
+  behaved (notebook 04).
+- **One orchard.** The result is a case study until it is repeated on other orchards.
 
 ## Licence
+
+Built with scikit-learn (Pedregosa et al., 2011), statsmodels (Seabold and Perktold,
+2010), XGBoost, SHAP and PyWavelets.
 
 Code under the MIT licence (see `LICENSE`). The MODIS, SPEI and WorldCover data keep their own terms.
 

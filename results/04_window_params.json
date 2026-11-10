@@ -14,6 +14,19 @@
     "min_samples_leaf": 2,
     "n_estimators": 686
   },
+  "original|2010-12|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.27922319558850817,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      8,
+      4
+    ]
+  },
+  "original|2010-12|SVR": {
+    "regressor__svr__C": 5.547119471592121,
+    "regressor__svr__epsilon": 0.13981961408994045,
+    "regressor__svr__gamma": 0.02576638574613589
+  },
   "original|2010-12|Ridge": {
     "ridge__alpha": 3.9810717055349776
   },
@@ -31,6 +44,19 @@
     "max_features": 0.75,
     "min_samples_leaf": 2,
     "n_estimators": 428
+  },
+  "original|2013-15|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.750524162234955,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      8,
+      4
+    ]
+  },
+  "original|2013-15|SVR": {
+    "regressor__svr__C": 5.547119471592121,
+    "regressor__svr__epsilon": 0.13981961408994045,
+    "regressor__svr__gamma": 0.02576638574613589
   },
   "original|2013-15|Ridge": {
     "ridge__alpha": 5.011872336272725
@@ -50,6 +76,18 @@
     "min_samples_leaf": 2,
     "n_estimators": 428
   },
+  "original|2016-18|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.6723666611319499,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      4
+    ]
+  },
+  "original|2016-18|SVR": {
+    "regressor__svr__C": 108.79145712532251,
+    "regressor__svr__epsilon": 0.050968542639990254,
+    "regressor__svr__gamma": 0.004253370248141297
+  },
   "original|2016-18|Ridge": {
     "ridge__alpha": 5.011872336272725
   },
@@ -67,6 +105,18 @@
     "max_features": 0.75,
     "min_samples_leaf": 1,
     "n_estimators": 211
+  },
+  "original|2019-21|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.535636802691537,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      4
+    ]
+  },
+  "original|2019-21|SVR": {
+    "regressor__svr__C": 6.80780756346786,
+    "regressor__svr__epsilon": 0.006254152586876391,
+    "regressor__svr__gamma": 0.012387743772940753
   },
   "original|2019-21|Ridge": {
     "ridge__alpha": 3.1622776601683795
@@ -86,6 +136,18 @@
     "min_samples_leaf": 2,
     "n_estimators": 428
   },
+  "original|2022-24|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.0013831806758107,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      32
+    ]
+  },
+  "original|2022-24|SVR": {
+    "regressor__svr__C": 7.599528920757915,
+    "regressor__svr__epsilon": 0.05972082434777331,
+    "regressor__svr__gamma": 0.0194539422879406
+  },
   "original|2022-24|Ridge": {
     "ridge__alpha": 5.011872336272725
   },
@@ -99,10 +161,22 @@
     "subsample": 0.6264175409994144
   },
   "seasonal|2010-12|RandomForest": {
-    "max_depth": 6,
+    "max_depth": 4,
     "max_features": 0.5,
     "min_samples_leaf": 1,
-    "n_estimators": 328
+    "n_estimators": 598
+  },
+  "seasonal|2010-12|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.535636802691537,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      4
+    ]
+  },
+  "seasonal|2010-12|SVR": {
+    "regressor__svr__C": 25.650834317709887,
+    "regressor__svr__epsilon": 0.011981845126013869,
+    "regressor__svr__gamma": 0.005599223654063347
   },
   "seasonal|2010-12|Ridge": {
     "ridge__alpha": 1.0
@@ -122,6 +196,19 @@
     "min_samples_leaf": 1,
     "n_estimators": 626
   },
+  "seasonal|2013-15|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.750524162234955,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      8,
+      4
+    ]
+  },
+  "seasonal|2013-15|SVR": {
+    "regressor__svr__C": 93.00119239139784,
+    "regressor__svr__epsilon": 0.0046964971613943935,
+    "regressor__svr__gamma": 0.0024066155737282493
+  },
   "seasonal|2013-15|Ridge": {
     "ridge__alpha": 1.2589254117941688
   },
@@ -139,6 +226,19 @@
     "max_features": 0.33,
     "min_samples_leaf": 1,
     "n_estimators": 570
+  },
+  "seasonal|2016-18|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.750524162234955,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      8,
+      4
+    ]
+  },
+  "seasonal|2016-18|SVR": {
+    "regressor__svr__C": 93.00119239139784,
+    "regressor__svr__epsilon": 0.0046964971613943935,
+    "regressor__svr__gamma": 0.0024066155737282493
   },
   "seasonal|2016-18|Ridge": {
     "ridge__alpha": 1.9952623149688828
@@ -158,6 +258,18 @@
     "min_samples_leaf": 1,
     "n_estimators": 570
   },
+  "seasonal|2019-21|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.5338651335458617,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      8
+    ]
+  },
+  "seasonal|2019-21|SVR": {
+    "regressor__svr__C": 645.1814804569218,
+    "regressor__svr__epsilon": 0.007523892475314572,
+    "regressor__svr__gamma": 0.0009189991710820511
+  },
   "seasonal|2019-21|Ridge": {
     "ridge__alpha": 0.5011872336272725
   },
@@ -175,6 +287,18 @@
     "max_features": 0.33,
     "min_samples_leaf": 2,
     "n_estimators": 935
+  },
+  "seasonal|2022-24|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.1922206532486979,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      4
+    ]
+  },
+  "seasonal|2022-24|SVR": {
+    "regressor__svr__C": 170.62527421800104,
+    "regressor__svr__epsilon": 0.12544051430643316,
+    "regressor__svr__gamma": 0.001547917475869209
   },
   "seasonal|2022-24|Ridge": {
     "ridge__alpha": 0.5011872336272725
@@ -194,6 +318,18 @@
     "min_samples_leaf": 2,
     "n_estimators": 686
   },
+  "trend|2010-12|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.00017004057263206375,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      32
+    ]
+  },
+  "trend|2010-12|SVR": {
+    "regressor__svr__C": 528.8647060971081,
+    "regressor__svr__epsilon": 0.03677434662105213,
+    "regressor__svr__gamma": 0.004556671913921472
+  },
   "trend|2010-12|Ridge": {
     "ridge__alpha": 0.0012589254117941675
   },
@@ -207,10 +343,22 @@
     "subsample": 0.9878024718776355
   },
   "trend|2013-15|RandomForest": {
-    "max_depth": 16,
+    "max_depth": null,
     "max_features": 1.0,
     "min_samples_leaf": 4,
-    "n_estimators": 380
+    "n_estimators": 949
+  },
+  "trend|2013-15|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.008319608786909063,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      4
+    ]
+  },
+  "trend|2013-15|SVR": {
+    "regressor__svr__C": 190.11514361861353,
+    "regressor__svr__epsilon": 0.0010842820109306234,
+    "regressor__svr__gamma": 0.002753672312748228
   },
   "trend|2013-15|Ridge": {
     "ridge__alpha": 39.81071705534978
@@ -230,6 +378,18 @@
     "min_samples_leaf": 2,
     "n_estimators": 686
   },
+  "trend|2016-18|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.0007907682124793849,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      4
+    ]
+  },
+  "trend|2016-18|SVR": {
+    "regressor__svr__C": 8.551667979262717,
+    "regressor__svr__epsilon": 0.0015554848958733473,
+    "regressor__svr__gamma": 0.008760126623561973
+  },
   "trend|2016-18|Ridge": {
     "ridge__alpha": 25.11886431509582
   },
@@ -248,6 +408,18 @@
     "min_samples_leaf": 2,
     "n_estimators": 686
   },
+  "trend|2019-21|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.0007907682124793849,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      4
+    ]
+  },
+  "trend|2019-21|SVR": {
+    "regressor__svr__C": 7.599528920757915,
+    "regressor__svr__epsilon": 0.05972082434777331,
+    "regressor__svr__gamma": 0.0194539422879406
+  },
   "trend|2019-21|Ridge": {
     "ridge__alpha": 1e-06
   },
@@ -265,6 +437,18 @@
     "max_features": 1.0,
     "min_samples_leaf": 2,
     "n_estimators": 686
+  },
+  "trend|2022-24|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.0001552507036362897,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+      4
+    ]
+  },
+  "trend|2022-24|SVR": {
+    "regressor__svr__C": 645.1814804569218,
+    "regressor__svr__epsilon": 0.007523892475314572,
+    "regressor__svr__gamma": 0.0009189991710820511
   },
   "trend|2022-24|Ridge": {
     "ridge__alpha": 1e-06
