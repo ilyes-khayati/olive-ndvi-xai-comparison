@@ -1,43 +1,71 @@
 branch,model,family,share
+original,MLP,LST,0.13863154043365453
+original,MLP,calendar,0.0810984333426462
+original,MLP,drought,0.012516085658998964
+original,MLP,noise probe,0.0028804663470279753
+original,MLP,own history,0.7648734742176724
 original,RandomForest,LST,0.6060810355765872
-original,RandomForest,calendar,0.00456635105344227
-original,RandomForest,drought,0.004573904915275896
+original,RandomForest,calendar,0.004566351053442272
+original,RandomForest,drought,0.004573904915275897
 original,RandomForest,noise probe,0.0
-original,RandomForest,own history,0.3847787084546946
+original,RandomForest,own history,0.3847787084546947
 original,Ridge,LST,0.05090663376945178
 original,Ridge,calendar,0.018702025200458473
 original,Ridge,drought,0.017484850518531065
 original,Ridge,noise probe,0.0015325881952648625
 original,Ridge,own history,0.9113739023162938
+original,SVR,LST,0.13556555312974822
+original,SVR,calendar,0.08389993740348684
+original,SVR,drought,0.013053241721044705
+original,SVR,noise probe,0.0024480439664992235
+original,SVR,own history,0.765033223779221
 original,XGBoost,LST,0.38748533403385665
 original,XGBoost,calendar,0.004095874046233115
 original,XGBoost,drought,0.009612890181578352
 original,XGBoost,noise probe,0.0008599624698554937
 original,XGBoost,own history,0.5979459392684764
-seasonal,RandomForest,LST,0.2063534116335263
-seasonal,RandomForest,calendar,0.014891827393102137
-seasonal,RandomForest,drought,0.004259671135976523
+seasonal,MLP,LST,0.15681054960586632
+seasonal,MLP,calendar,0.06491629455955693
+seasonal,MLP,drought,0.014411335343589961
+seasonal,MLP,noise probe,0.0008010001732213301
+seasonal,MLP,own history,0.7630608203177653
+seasonal,RandomForest,LST,0.20577156981891603
+seasonal,RandomForest,calendar,0.014809023168434793
+seasonal,RandomForest,drought,0.004261725268664454
 seasonal,RandomForest,noise probe,0.0
-seasonal,RandomForest,own history,0.774495089837395
-seasonal,Ridge,LST,0.0848923700405324
-seasonal,Ridge,calendar,0.05206718422899
-seasonal,Ridge,drought,0.018212329153549412
+seasonal,RandomForest,own history,0.7751576817439847
+seasonal,Ridge,LST,0.08489237004053589
+seasonal,Ridge,calendar,0.05206718422898459
+seasonal,Ridge,drought,0.01821232915354877
 seasonal,Ridge,noise probe,0.0
-seasonal,Ridge,own history,0.8448281165769281
+seasonal,Ridge,own history,0.8448281165769309
+seasonal,SVR,LST,0.20349391861575306
+seasonal,SVR,calendar,0.07037562776375221
+seasonal,SVR,drought,0.00882588657898187
+seasonal,SVR,noise probe,0.0006080528401228559
+seasonal,SVR,own history,0.71669651420139
 seasonal,XGBoost,LST,0.12616483283063742
-seasonal,XGBoost,calendar,0.016491992818855054
-seasonal,XGBoost,drought,0.006436409120554345
+seasonal,XGBoost,calendar,0.01649199281885505
+seasonal,XGBoost,drought,0.0064364091205543535
 seasonal,XGBoost,noise probe,0.0
 seasonal,XGBoost,own history,0.8509067652299532
+trend,MLP,LST,0.03505707373751179
+trend,MLP,drought,0.007669335136983748
+trend,MLP,noise probe,0.0007356898595036076
+trend,MLP,own history,0.9565379012660009
 trend,RandomForest,LST,0.0
-trend,RandomForest,drought,0.006214853049035177
-trend,RandomForest,noise probe,0.0002910131167615584
-trend,RandomForest,own history,0.9934941338342033
-trend,Ridge,LST,0.0007287301958732229
-trend,Ridge,drought,0.0008944722904698375
-trend,Ridge,noise probe,3.415052452328033e-05
-trend,Ridge,own history,0.9983426469891337
-trend,XGBoost,LST,0.0033842723637699437
-trend,XGBoost,drought,0.030055058328366784
-trend,XGBoost,noise probe,0.0006582189364430158
-trend,XGBoost,own history,0.9659024503714203
+trend,RandomForest,drought,0.006412410230874096
+trend,RandomForest,noise probe,0.00026906828672982366
+trend,RandomForest,own history,0.9933185214823961
+trend,Ridge,LST,0.0007287301958703658
+trend,Ridge,drought,0.0008944722904663126
+trend,Ridge,noise probe,3.415052452328423e-05
+trend,Ridge,own history,0.99834264698914
+trend,SVR,LST,0.0
+trend,SVR,drought,0.0024601057320046416
+trend,SVR,noise probe,0.00019878778817844384
+trend,SVR,own history,0.9973411064798169
+trend,XGBoost,LST,0.00338427236376988
+trend,XGBoost,drought,0.03005505832836652
+trend,XGBoost,noise probe,0.0006582189364430051
+trend,XGBoost,own history,0.9659024503714206

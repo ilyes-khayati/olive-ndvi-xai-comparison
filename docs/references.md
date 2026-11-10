@@ -1,0 +1,62 @@
+# References
+
+Every work cited in the notebooks and the README, in one list. Each notebook ends
+with the entries it cites.
+
+- Akaike, H. (1974). A new look at the statistical model identification. IEEE Transactions on Automatic Control, 19(6), 716–723.
+- Beguería, S., Vicente-Serrano, S. M., Reig, F. & Latorre, B. (2014). Standardized precipitation evapotranspiration index (SPEI) revisited: parameter fitting, evapotranspiration models, tools, datasets and drought monitoring. International Journal of Climatology, 34(10), 3001–3023.
+- Ben Abbes, A., Bounouh, O., Farah, I. R., de Jong, R. & Martínez, B. (2018). Comparative study of three satellite image time-series decomposition methods for vegetation change detection. European Journal of Remote Sensing, 51(1), 607–615. https://doi.org/10.1080/22797254.2018.1465360
+- Bergmeir, C. & Benítez, J. M. (2012). On the use of cross-validation for time series predictor evaluation. Information Sciences, 191, 192–213.
+- Bergstra, J. & Bengio, Y. (2012). Random search for hyper-parameter optimization. Journal of Machine Learning Research, 13, 281–305.
+- Box, G. E. P., Jenkins, G. M., Reinsel, G. C. & Ljung, G. M. (2015). Time Series Analysis: Forecasting and Control (5th ed.). Wiley.
+- Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5–32.
+- Breiman, L. (2001). Statistical modeling: the two cultures. Statistical Science, 16(3), 199–231.
+- Bretherton, C. S., Widmann, M., Dymnikov, V. P., Wallace, J. M. & Bladé, I. (1999). The effective number of spatial degrees of freedom of a time-varying field. Journal of Climate, 12(7), 1990–2009.
+- Chen, T. & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 785–794.
+- Cleveland, R. B., Cleveland, W. S., McRae, J. E. & Terpenning, I. (1990). STL: A seasonal-trend decomposition procedure based on loess. Journal of Official Statistics, 6(1), 3–73.
+- Connor, D. J. & Fereres, E. (2005). The physiology of adaptation and yield expression in olive. Horticultural Reviews, 31, 155–229.
+- Cortes, C. & Vapnik, V. (1995). Support-vector networks. Machine Learning, 20(3), 273–297.
+- Dickey, D. A. & Fuller, W. A. (1979). Distribution of the estimators for autoregressive time series with a unit root. Journal of the American Statistical Association, 74(366), 427–431.
+- Didan, K. (2021). MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061 [MOD13Q1]. NASA EOSDIS Land Processes DAAC. https://doi.org/10.5067/MODIS/MOD13Q1.061
+- Drucker, H., Burges, C. J. C., Kaufman, L., Smola, A. & Vapnik, V. (1997). Support vector regression machines. Advances in Neural Information Processing Systems, 9, 155–161.
+- Du, K., Zhao, Y. & Lei, J. (2017). The incorrect usage of singular spectral analysis and discrete wavelet transform in hybrid models to predict hydrological time series. Journal of Hydrology, 552, 44–51. https://doi.org/10.1016/j.jhydrol.2017.06.019
+- Dunn, O. J. (1961). Multiple comparisons among means. Journal of the American Statistical Association, 56(293), 52–64.
+- Fisher, A., Rudin, C. & Dominici, F. (2019). All models are wrong, but many are useful: learning a variable's importance by studying an entire class of prediction models simultaneously. Journal of Machine Learning Research, 20(177), 1–81.
+- Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. & Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, 202, 18–27.
+- Gouveia, C. M., Trigo, R. M., Beguería, S. & Vicente-Serrano, S. M. (2017). Drought impacts on vegetation activity in the Mediterranean region: An assessment using remote sensing data and multi-scale drought indicators. Ecological Indicators, 73, 231–240.
+- Guyon, I. & Elisseeff, A. (2003). An introduction to variable and feature selection. Journal of Machine Learning Research, 3, 1157–1182.
+- Hastie, T., Tibshirani, R. & Friedman, J. (2009). The Elements of Statistical Learning (2nd ed.). Springer.
+- Hewamalage, H., Bergmeir, C. & Bandara, K. (2021). Recurrent neural networks for time series forecasting: current status and future directions. International Journal of Forecasting, 37(1), 388–427.
+- Hoerl, A. E. & Kennard, R. W. (1970). Ridge regression: biased estimation for nonorthogonal problems. Technometrics, 12(1), 55–67.
+- Holben, B. N. (1986). Characteristics of maximum-value composite images from temporal AVHRR data. International Journal of Remote Sensing, 7(11), 1417–1434.
+- Hooker, G., Mentch, L. & Zhou, S. (2021). Unrestricted permutation forces extrapolation: variable importance requires at least one more model, or there is no free variable importance. Statistics and Computing, 31, 82.
+- Huete, A., Didan, K., Miura, T., Rodriguez, E. P., Gao, X. & Ferreira, L. G. (2002). Overview of the radiometric and biophysical performance of the MODIS vegetation indices. Remote Sensing of Environment, 83(1–2), 195–213.
+- Hyndman, R. J. & Athanasopoulos, G. (2021). Forecasting: Principles and Practice (3rd ed.). OTexts, Melbourne. https://otexts.com/fpp3/
+- Hyndman, R. J. & Khandakar, Y. (2008). Automatic time series forecasting: the forecast package for R. Journal of Statistical Software, 27(3), 1–22.
+- Hyndman, R. J. & Koehler, A. B. (2006). Another look at measures of forecast accuracy. International Journal of Forecasting, 22(4), 679–688.
+- Janzing, D., Minorics, L. & Blöbaum, P. (2020). Feature relevance quantification in explainable AI: a causal problem. Proceedings of the 23rd International Conference on Artificial Intelligence and Statistics (AISTATS), PMLR 108, 2907–2916.
+- Kwiatkowski, D., Phillips, P. C. B., Schmidt, P. & Shin, Y. (1992). Testing the null hypothesis of stationarity against the alternative of a unit root. Journal of Econometrics, 54(1–3), 159–178.
+- Lee, G. R., Gommers, R., Waselewski, F., Wohlfahrt, K. & O'Leary, A. (2019). PyWavelets: A Python package for wavelet analysis. Journal of Open Source Software, 4(36), 1237.
+- Liu, D. C. & Nocedal, J. (1989). On the limited memory BFGS method for large scale optimization. Mathematical Programming, 45, 503–528.
+- Ljung, G. M. & Box, G. E. P. (1978). On a measure of lack of fit in time series models. Biometrika, 65(2), 297–303.
+- Lundberg, S. M. & Lee, S.-I. (2017). A unified approach to interpreting model predictions. Advances in Neural Information Processing Systems, 30, 4765–4774.
+- Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., Katz, R., Himmelfarb, J., Bansal, N. & Lee, S.-I. (2020). From local explanations to global understanding with explainable AI for trees. Nature Machine Intelligence, 2, 56–67.
+- Mallat, S. G. (1989). A theory for multiresolution signal decomposition: the wavelet representation. IEEE Transactions on Pattern Analysis and Machine Intelligence, 11(7), 674–693.
+- Martínez, B. & Gilabert, M. A. (2009). Vegetation dynamics from NDVI time series analysis using the wavelet transform. Remote Sensing of Environment, 113(9), 1823–1842.
+- Pedregosa, F. et al. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12, 2825–2830.
+- Percival, D. B. & Walden, A. T. (2000). Wavelet Methods for Time Series Analysis. Cambridge University Press.
+- Quilty, J. & Adamowski, J. (2018). Addressing the incorrect usage of wavelet-based hydrological and water resources forecasting models for real-world applications with best practices and a new forecasting framework. Journal of Hydrology, 563, 336–353. https://doi.org/10.1016/j.jhydrol.2018.05.003
+- Rumelhart, D. E., Hinton, G. E. & Williams, R. J. (1986). Learning representations by back-propagating errors. Nature, 323, 533–536.
+- Said, S. E. & Dickey, D. A. (1984). Testing for unit roots in autoregressive-moving average models of unknown order. Biometrika, 71(3), 599–607.
+- Seabold, S. & Perktold, J. (2010). Statsmodels: econometric and statistical modeling with Python. Proceedings of the 9th Python in Science Conference, 92–96.
+- Semenova, L., Rudin, C. & Parr, R. (2022). On the existence of simpler machine learning models. Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency, 1827–1858.
+- Smola, A. J. & Schölkopf, B. (2004). A tutorial on support vector regression. Statistics and Computing, 14(3), 199–222.
+- Stoppiglia, H., Dreyfus, G., Dubois, R. & Oussar, Y. (2003). Ranking a random feature for variable and feature selection. Journal of Machine Learning Research, 3, 1399–1414.
+- Strobl, C., Boulesteix, A.-L., Kneib, T., Augustin, T. & Zeileis, A. (2008). Conditional variable importance for random forests. BMC Bioinformatics, 9, 307.
+- Tashman, L. J. (2000). Out-of-sample tests of forecasting accuracy: an analysis and review. International Journal of Forecasting, 16(4), 437–450.
+- Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. Journal of the Royal Statistical Society, Series B, 58(1), 267–288.
+- Tucker, C. J. (1979). Red and photographic infrared linear combinations for monitoring vegetation. Remote Sensing of Environment, 8(2), 127–150.
+- Vicente-Serrano, S. M., Beguería, S. & López-Moreno, J. I. (2010). A multiscalar drought index sensitive to global warming: the Standardized Precipitation Evapotranspiration Index. Journal of Climate, 23(7), 1696–1718.
+- Vigna, S. (2015). A weighted correlation index for rankings with ties. Proceedings of the 24th International Conference on World Wide Web, 1166–1176.
+- Wan, Z., Hook, S. & Hulley, G. (2021). MODIS/Terra Land Surface Temperature/Emissivity 8-Day L3 Global 1km SIN Grid V061 [MOD11A2]. NASA EOSDIS Land Processes DAAC. https://doi.org/10.5067/MODIS/MOD11A2.061
+- Wang, X., Smith, K. & Hyndman, R. (2006). Characteristic-based clustering for time series data. Data Mining and Knowledge Discovery, 13(3), 335–364.
