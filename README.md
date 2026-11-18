@@ -31,8 +31,14 @@ of the framework.
   61% (Random Forest, XGBoost) to 17% (MLP, SVR) and 9% (Ridge).
 - **Two families of explanation.** Trees agree with trees (τ 0.93), MLP with SVR (0.92) and both
   with Ridge (0.65–0.72); trees with the others only 0.46–0.61, beyond refitting noise.
-- **SPEI matters little to every model** (1–3%), though significant in SARIMAX: a real but
-  four times smaller effect than LST's, ranked the same way by all six models.
+- **SPEI matters little to every learned model** (0.6–3%), though significant in SARIMAX.
+  SARIMAX, which is seasonally differenced, estimates its effects from year-to-year departures;
+  per standard deviation of those departures its SPEI effect (+0.013) is at least as large as
+  its LST effect (−0.0084). The models agree with SARIMAX on the direction of the drought
+  effect, not on its weight.
+- **The finding holds under three explanation methods.** LST's share for the trees and for the
+  other three models: 76–61% vs 9–17% (permutation), 51–39% vs 10–17% (SHAP), 62–40% vs 2–7%
+  (drop-column).
 - **The trend component is explained by its own past** (96–100%), and there the explanations
   are unstable.
 
