@@ -27,12 +27,19 @@ of the framework.
   forecast and a wetter SPEI-6 raises it, as SARIMAX's significant coefficients say
   (−0.0044 NDVI per °C, p = 0.002; +0.013 per SPEI unit, p < 0.001).
 - **They agree on what matters, not on how much.** All five rank last month's LST, last
-  month's NDVI and NDVI two years earlier first. LST's share of importance runs from 76% and
-  61% (Random Forest, XGBoost) to 17% (MLP, SVR) and 9% (Ridge).
+  month's NDVI and NDVI two years earlier first. LST's share of single-feature permutation
+  importance (out-of-fold, five seeds) runs from 76% and 61% (Random Forest, XGBoost) to 17%
+  (MLP, SVR) and 9% (Ridge).
 - **Two families of explanation.** Trees agree with trees (τ 0.93), MLP with SVR (0.92) and both
   with Ridge (0.65–0.72); trees with the others only 0.46–0.61, beyond refitting noise.
-- **SPEI matters little to every model** (1–3%), though significant in SARIMAX: a real but
-  four times smaller effect than LST's, ranked the same way by all six models.
+- **SPEI matters little to every learned model** (0.6–3%), though significant in SARIMAX.
+  SARIMAX is seasonally differenced, so its effects come from departures from the seasonal
+  cycle; per standard deviation of the monthly anomaly its SPEI effect (+0.013) and its LST
+  effect (−0.0084) are of similar size. The models agree with SARIMAX on the direction of the
+  drought effect, not on its weight.
+- **The finding holds under three explanation methods.** LST's share for the trees and for the
+  other three models: 76–61% vs 9–17% (permutation), 51–39% vs 10–17% (SHAP), 62–40% vs 2–7%
+  (drop-column).
 - **The trend component is explained by its own past** (96–100%), and there the explanations
   are unstable.
 
@@ -42,11 +49,11 @@ of the framework.
   between importance rankings is 0.93 for XGBoost vs Random Forest, and 0.46–0.54 for tree vs
   Ridge. Each model agrees with itself at 0.96 or more when refitted with other seeds.
 - **The disagreement is land-surface temperature (LST).** A linear screen rejected LST, and
-  Ridge gives it 5% of its importance. The tree models give it 39–61%, and refitting them
-  without LST raises their error by 22–36%.
+  Ridge gives it 5% of its grouped (family) permutation importance. The tree models give it
+  39–61% on the same measure, and refitting them without LST raises their error by 22–36%.
 - **In the orchard, the trees use the weather in LST, not just the season.** Replacing LST by
   its monthly climatology recovers only 18–38% of its value. The trees' response steps down
-  near 21 °C and again near 31 °C: heat and dry-season limits.
+  near 21 °C and again near 31 °C, which may mark the entry into and exit from the hot season.
 - **In the forest, the same predictor is a seasonal clock**, with a threshold near 15 °C. Same
   models, same pipeline, opposite mechanism.
 
@@ -116,7 +123,9 @@ Each notebook lists its own; the main ones:
 - **Two-sided components.** The wavelet filter uses later months (measured in notebook 02), so
   the seasonal and trend branches describe the components, not a real-time forecast.
 - **Composite timing.** A MODIS composite is dated by the first day of its window, so part of
-  last month's NDVI can come from the month being forecast (measured in notebook 02).
+  last month's NDVI (and, less, of LST) can come from the month being forecast (measured in
+  notebook 02). It affects every model, not necessarily equally; notebook 09 re-runs the
+  comparison with window-end dating.
 - **Coarse climate.** LST covers 0.64 of one 1 km pixel and SPEI one 0.5° cell, yet LST is the
   predictor the models rely on most.
 - **SARIMAX is a sound reference on the original series only**; on the components it is poorly

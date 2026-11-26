@@ -1,0 +1,1286 @@
+{
+ "2010-12": {
+  "orders": {
+   "direct|original": {
+    "order": [
+     0,
+     0,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -239.90026625165592,
+    "strength": 0.8853826502019719,
+    "lb12": 0.5694954078096579,
+    "lb24": 0.8655546416757807
+   },
+   "wavelet|seasonal": {
+    "order": [
+     0,
+     0,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -244.4887337986731,
+    "strength": 0.8767832313242289,
+    "lb12": 0.3812669365554579,
+    "lb24": 0.6879828967296409
+   },
+   "wavelet|trend": {
+    "order": [
+     2,
+     1,
+     0
+    ],
+    "seasonal_order": [
+     0,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -900.6117544320088,
+    "strength": 0.0,
+    "lb12": 0.0004227737526643196,
+    "lb24": 1.2585798877129518e-07
+   },
+   "causal|seasonal": {
+    "order": [
+     0,
+     0,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -247.33865763560954,
+    "strength": 0.864104701479078,
+    "lb12": 0.41336148940722517,
+    "lb24": 0.8907683123913039
+   },
+   "causal|trend": {
+    "order": [
+     2,
+     2,
+     1
+    ],
+    "seasonal_order": [
+     1,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -667.8144981799439,
+    "strength": 0.08796351066867125,
+    "lb12": 0.574915127058168,
+    "lb24": 0.5844653739662584
+   }
+  },
+  "params": {
+   "direct|original|Ridge": {
+    "ridge__alpha": 5.011872336272725
+   },
+   "direct|original|SVR": {
+    "regressor__svr__C": 509.2001507228804,
+    "regressor__svr__epsilon": 0.24980881661381976,
+    "regressor__svr__gamma": 0.03325000748980905
+   },
+   "direct|original|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.27922319558850817,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     8,
+     4
+    ]
+   },
+   "direct|original|XGBoost": {
+    "colsample_bytree": 0.5978160765665231,
+    "learning_rate": 0.14406946067538076,
+    "max_depth": 1,
+    "min_child_weight": 1,
+    "n_estimators": 2863,
+    "reg_lambda": 0.07278312668139324,
+    "subsample": 0.963159413342247
+   },
+   "direct|original|RandomForest": {
+    "max_depth": 8,
+    "max_features": 0.75,
+    "min_samples_leaf": 2,
+    "n_estimators": 428
+   },
+   "wavelet|seasonal|Ridge": {
+    "ridge__alpha": 1.584893192461114
+   },
+   "wavelet|seasonal|SVR": {
+    "regressor__svr__C": 108.79145712532251,
+    "regressor__svr__epsilon": 0.050968542639990254,
+    "regressor__svr__gamma": 0.004253370248141297
+   },
+   "wavelet|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.750524162234955,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     8,
+     4
+    ]
+   },
+   "wavelet|seasonal|XGBoost": {
+    "colsample_bytree": 0.43043264032873196,
+    "learning_rate": 0.055749395107078104,
+    "max_depth": 5,
+    "min_child_weight": 3,
+    "n_estimators": 2276,
+    "reg_lambda": 0.011889379831773014,
+    "subsample": 0.7323448479531138
+   },
+   "wavelet|seasonal|RandomForest": {
+    "max_depth": 4,
+    "max_features": 0.5,
+    "min_samples_leaf": 1,
+    "n_estimators": 598
+   },
+   "wavelet|trend|Ridge": {
+    "ridge__alpha": 0.00794328234724282
+   },
+   "wavelet|trend|SVR": {
+    "regressor__svr__C": 93.00119239139784,
+    "regressor__svr__epsilon": 0.0046964971613943935,
+    "regressor__svr__gamma": 0.0024066155737282493
+   },
+   "wavelet|trend|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.08765018795171545,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     32
+    ]
+   },
+   "wavelet|trend|XGBoost": {
+    "colsample_bytree": 0.8887980908499196,
+    "learning_rate": 0.1630115083841652,
+    "max_depth": 1,
+    "min_child_weight": 3,
+    "n_estimators": 1663,
+    "reg_lambda": 2.8989335277123973,
+    "subsample": 0.38667398799460906
+   },
+   "wavelet|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   },
+   "causal|seasonal|Ridge": {
+    "ridge__alpha": 2.5118864315095824
+   },
+   "causal|seasonal|SVR": {
+    "regressor__svr__C": 22.365712242177022,
+    "regressor__svr__epsilon": 0.22670376672491324,
+    "regressor__svr__gamma": 0.0013394312372333958
+   },
+   "causal|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.6723666611319499,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "causal|seasonal|XGBoost": {
+    "colsample_bytree": 0.9361906028889169,
+    "learning_rate": 0.09217614077736022,
+    "max_depth": 6,
+    "min_child_weight": 5,
+    "n_estimators": 2563,
+    "reg_lambda": 62.68879085276521,
+    "subsample": 0.9557225316526186
+   },
+   "causal|seasonal|RandomForest": {
+    "max_depth": 4,
+    "max_features": 0.5,
+    "min_samples_leaf": 1,
+    "n_estimators": 598
+   },
+   "causal|trend|Ridge": {
+    "ridge__alpha": 0.5011872336272725
+   },
+   "causal|trend|SVR": {
+    "regressor__svr__C": 645.1814804569218,
+    "regressor__svr__epsilon": 0.007523892475314572,
+    "regressor__svr__gamma": 0.0009189991710820511
+   },
+   "causal|trend|MLP": {
+    "regressor__mlpregressor__activation": "relu",
+    "regressor__mlpregressor__alpha": 0.26289932085988,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     8
+    ]
+   },
+   "causal|trend|XGBoost": {
+    "colsample_bytree": 0.8044428583081418,
+    "learning_rate": 0.020697077097626835,
+    "max_depth": 2,
+    "min_child_weight": 1,
+    "n_estimators": 2691,
+    "reg_lambda": 0.02652347535167728,
+    "subsample": 0.6315202935426601
+   },
+   "causal|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   }
+  },
+  "chosen": {
+   "wavelet": [
+    "MLP",
+    "SARIMA"
+   ],
+   "causal": [
+    "XGBoost",
+    "SARIMA"
+   ]
+  }
+ },
+ "2013-15": {
+  "orders": {
+   "direct|original": {
+    "order": [
+     1,
+     0,
+     1
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -354.3716749082799,
+    "strength": 0.8736964515096797,
+    "lb12": 0.4129892162345685,
+    "lb24": 0.621549739755063
+   },
+   "wavelet|seasonal": {
+    "order": [
+     2,
+     0,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -368.59655924407383,
+    "strength": 0.8641443202693441,
+    "lb12": 0.16618976815005987,
+    "lb24": 0.27729512484848723
+   },
+   "wavelet|trend": {
+    "order": [
+     2,
+     1,
+     1
+    ],
+    "seasonal_order": [
+     0,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -1299.5874469826085,
+    "strength": 0.0,
+    "lb12": 1.4539233489130087e-06,
+    "lb24": 7.989773619559945e-13
+   },
+   "causal|seasonal": {
+    "order": [
+     0,
+     0,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -363.92691297937614,
+    "strength": 0.8468237498183557,
+    "lb12": 0.3688218810344984,
+    "lb24": 0.681367896257391
+   },
+   "causal|trend": {
+    "order": [
+     1,
+     1,
+     1
+    ],
+    "seasonal_order": [
+     0,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -980.3056811334371,
+    "strength": 0.0,
+    "lb12": 0.380050283348806,
+    "lb24": 0.6489776719892038
+   }
+  },
+  "params": {
+   "direct|original|Ridge": {
+    "ridge__alpha": 6.309573444801943
+   },
+   "direct|original|SVR": {
+    "regressor__svr__C": 2.079108346249158,
+    "regressor__svr__epsilon": 0.006805908701019696,
+    "regressor__svr__gamma": 0.02224013329474756
+   },
+   "direct|original|MLP": {
+    "regressor__mlpregressor__activation": "relu",
+    "regressor__mlpregressor__alpha": 0.2713385093212272,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     8,
+     4
+    ]
+   },
+   "direct|original|XGBoost": {
+    "colsample_bytree": 0.7413135558067537,
+    "learning_rate": 0.13423761023017083,
+    "max_depth": 2,
+    "min_child_weight": 2,
+    "n_estimators": 2505,
+    "reg_lambda": 2.9614661139648244,
+    "subsample": 0.30926580043122964
+   },
+   "direct|original|RandomForest": {
+    "max_depth": 8,
+    "max_features": 0.75,
+    "min_samples_leaf": 2,
+    "n_estimators": 428
+   },
+   "wavelet|seasonal|Ridge": {
+    "ridge__alpha": 2.5118864315095824
+   },
+   "wavelet|seasonal|SVR": {
+    "regressor__svr__C": 93.00119239139784,
+    "regressor__svr__epsilon": 0.0046964971613943935,
+    "regressor__svr__gamma": 0.0024066155737282493
+   },
+   "wavelet|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.6723666611319499,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "wavelet|seasonal|XGBoost": {
+    "colsample_bytree": 0.46283889498083586,
+    "learning_rate": 0.004647394358649535,
+    "max_depth": 2,
+    "min_child_weight": 2,
+    "n_estimators": 2038,
+    "reg_lambda": 6.145630813263575,
+    "subsample": 0.9279490732222004
+   },
+   "wavelet|seasonal|RandomForest": {
+    "max_depth": 16,
+    "max_features": 0.33,
+    "min_samples_leaf": 1,
+    "n_estimators": 570
+   },
+   "wavelet|trend|Ridge": {
+    "ridge__alpha": 1e-06
+   },
+   "wavelet|trend|SVR": {
+    "regressor__svr__C": 528.8647060971081,
+    "regressor__svr__epsilon": 0.03677434662105213,
+    "regressor__svr__gamma": 0.004556671913921472
+   },
+   "wavelet|trend|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.08765018795171545,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     32
+    ]
+   },
+   "wavelet|trend|XGBoost": {
+    "colsample_bytree": 0.8887980908499196,
+    "learning_rate": 0.1630115083841652,
+    "max_depth": 1,
+    "min_child_weight": 3,
+    "n_estimators": 1663,
+    "reg_lambda": 2.8989335277123973,
+    "subsample": 0.38667398799460906
+   },
+   "wavelet|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   },
+   "causal|seasonal|Ridge": {
+    "ridge__alpha": 3.1622776601683795
+   },
+   "causal|seasonal|SVR": {
+    "regressor__svr__C": 7.599528920757915,
+    "regressor__svr__epsilon": 0.05972082434777331,
+    "regressor__svr__gamma": 0.0194539422879406
+   },
+   "causal|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.6723666611319499,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "causal|seasonal|XGBoost": {
+    "colsample_bytree": 0.8044428583081418,
+    "learning_rate": 0.020697077097626835,
+    "max_depth": 2,
+    "min_child_weight": 1,
+    "n_estimators": 2691,
+    "reg_lambda": 0.02652347535167728,
+    "subsample": 0.6315202935426601
+   },
+   "causal|seasonal|RandomForest": {
+    "max_depth": 8,
+    "max_features": 0.75,
+    "min_samples_leaf": 2,
+    "n_estimators": 428
+   },
+   "causal|trend|Ridge": {
+    "ridge__alpha": 7.943282347242821
+   },
+   "causal|trend|SVR": {
+    "regressor__svr__C": 436.92456983094206,
+    "regressor__svr__epsilon": 0.1297905897383722,
+    "regressor__svr__gamma": 0.000134077442759054
+   },
+   "causal|trend|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.16758663342377542,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "causal|trend|XGBoost": {
+    "colsample_bytree": 0.9581467825483372,
+    "learning_rate": 0.06091276925610799,
+    "max_depth": 3,
+    "min_child_weight": 2,
+    "n_estimators": 2011,
+    "reg_lambda": 0.03368279736947911,
+    "subsample": 0.7955422238728044
+   },
+   "causal|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   }
+  },
+  "chosen": {
+   "wavelet": [
+    "SARIMA",
+    "MLP"
+   ],
+   "causal": [
+    "XGBoost",
+    "SARIMA"
+   ]
+  }
+ },
+ "2016-18": {
+  "orders": {
+   "direct|original": {
+    "order": [
+     2,
+     0,
+     0
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -478.80250218335584,
+    "strength": 0.8978318551778889,
+    "lb12": 0.37419698965403797,
+    "lb24": 0.3363406137016702
+   },
+   "wavelet|seasonal": {
+    "order": [
+     2,
+     0,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -496.87511571118273,
+    "strength": 0.8988250142753719,
+    "lb12": 0.05533357558123788,
+    "lb24": 0.10521542752504015
+   },
+   "wavelet|trend": {
+    "order": [
+     2,
+     1,
+     1
+    ],
+    "seasonal_order": [
+     0,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -1703.292522208998,
+    "strength": 0.0,
+    "lb12": 4.119577546112021e-12,
+    "lb24": 3.1220273288839444e-26
+   },
+   "causal|seasonal": {
+    "order": [
+     2,
+     0,
+     0
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -491.8882900267864,
+    "strength": 0.8854881819315605,
+    "lb12": 0.17745097314125793,
+    "lb24": 0.2730648950055795
+   },
+   "causal|trend": {
+    "order": [
+     1,
+     1,
+     1
+    ],
+    "seasonal_order": [
+     1,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -1286.4429767502313,
+    "strength": 0.0,
+    "lb12": 0.31637291032987885,
+    "lb24": 0.4288203447686138
+   }
+  },
+  "params": {
+   "direct|original|Ridge": {
+    "ridge__alpha": 5.011872336272725
+   },
+   "direct|original|SVR": {
+    "regressor__svr__C": 7.599528920757915,
+    "regressor__svr__epsilon": 0.05972082434777331,
+    "regressor__svr__gamma": 0.0194539422879406
+   },
+   "direct|original|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.6723666611319499,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "direct|original|XGBoost": {
+    "colsample_bytree": 0.7869378119471999,
+    "learning_rate": 0.003066396019416707,
+    "max_depth": 8,
+    "min_child_weight": 4,
+    "n_estimators": 2361,
+    "reg_lambda": 1.089853846878525,
+    "subsample": 0.36046388625944886
+   },
+   "direct|original|RandomForest": {
+    "max_depth": 8,
+    "max_features": 0.75,
+    "min_samples_leaf": 2,
+    "n_estimators": 428
+   },
+   "wavelet|seasonal|Ridge": {
+    "ridge__alpha": 1.2589254117941688
+   },
+   "wavelet|seasonal|SVR": {
+    "regressor__svr__C": 170.62527421800104,
+    "regressor__svr__epsilon": 0.12544051430643316,
+    "regressor__svr__gamma": 0.001547917475869209
+   },
+   "wavelet|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.750524162234955,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     8,
+     4
+    ]
+   },
+   "wavelet|seasonal|XGBoost": {
+    "colsample_bytree": 0.3109242451127797,
+    "learning_rate": 0.0077665720755750135,
+    "max_depth": 4,
+    "min_child_weight": 6,
+    "n_estimators": 1233,
+    "reg_lambda": 0.013485317705317046,
+    "subsample": 0.7061062013896839
+   },
+   "wavelet|seasonal|RandomForest": {
+    "max_depth": 16,
+    "max_features": 0.33,
+    "min_samples_leaf": 1,
+    "n_estimators": 570
+   },
+   "wavelet|trend|Ridge": {
+    "ridge__alpha": 0.025118864315095822
+   },
+   "wavelet|trend|SVR": {
+    "regressor__svr__C": 645.1814804569218,
+    "regressor__svr__epsilon": 0.007523892475314572,
+    "regressor__svr__gamma": 0.0009189991710820511
+   },
+   "wavelet|trend|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.08765018795171545,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     32
+    ]
+   },
+   "wavelet|trend|XGBoost": {
+    "colsample_bytree": 0.7963504794955911,
+    "learning_rate": 0.025032234973761336,
+    "max_depth": 1,
+    "min_child_weight": 3,
+    "n_estimators": 1738,
+    "reg_lambda": 0.46767644759328447,
+    "subsample": 0.3919025299312792
+   },
+   "wavelet|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   },
+   "causal|seasonal|Ridge": {
+    "ridge__alpha": 1.9952623149688828
+   },
+   "causal|seasonal|SVR": {
+    "regressor__svr__C": 545.5731044851532,
+    "regressor__svr__epsilon": 0.15579998815213625,
+    "regressor__svr__gamma": 0.0010369709028907694
+   },
+   "causal|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "relu",
+    "regressor__mlpregressor__alpha": 1.3550867439218242,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     32
+    ]
+   },
+   "causal|seasonal|XGBoost": {
+    "colsample_bytree": 0.7143546107319148,
+    "learning_rate": 0.010536484553676251,
+    "max_depth": 4,
+    "min_child_weight": 10,
+    "n_estimators": 1561,
+    "reg_lambda": 0.6676706217320055,
+    "subsample": 0.7782969348833763
+   },
+   "causal|seasonal|RandomForest": {
+    "max_depth": 6,
+    "max_features": 0.5,
+    "min_samples_leaf": 1,
+    "n_estimators": 328
+   },
+   "causal|trend|Ridge": {
+    "ridge__alpha": 0.6309573444801942
+   },
+   "causal|trend|SVR": {
+    "regressor__svr__C": 436.92456983094206,
+    "regressor__svr__epsilon": 0.1297905897383722,
+    "regressor__svr__gamma": 0.000134077442759054
+   },
+   "causal|trend|MLP": {
+    "regressor__mlpregressor__activation": "relu",
+    "regressor__mlpregressor__alpha": 0.019982467392329464,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "causal|trend|XGBoost": {
+    "colsample_bytree": 0.9581467825483372,
+    "learning_rate": 0.06091276925610799,
+    "max_depth": 3,
+    "min_child_weight": 2,
+    "n_estimators": 2011,
+    "reg_lambda": 0.03368279736947911,
+    "subsample": 0.7955422238728044
+   },
+   "causal|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   }
+  },
+  "chosen": {
+   "wavelet": [
+    "MLP",
+    "SVR"
+   ],
+   "causal": [
+    "SARIMAX",
+    "XGBoost"
+   ]
+  }
+ },
+ "2019-21": {
+  "orders": {
+   "direct|original": {
+    "order": [
+     2,
+     0,
+     0
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -621.4692978431422,
+    "strength": 0.9124979131351598,
+    "lb12": 0.43239622451406573,
+    "lb24": 0.21680333754423178
+   },
+   "wavelet|seasonal": {
+    "order": [
+     2,
+     0,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -649.783625269183,
+    "strength": 0.9110757490953582,
+    "lb12": 0.1021690965179724,
+    "lb24": 0.06613787779363006
+   },
+   "wavelet|trend": {
+    "order": [
+     2,
+     1,
+     1
+    ],
+    "seasonal_order": [
+     0,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -2105.3666664652073,
+    "strength": 0.0,
+    "lb12": 4.297851042345488e-15,
+    "lb24": 1.3974787202889207e-34
+   },
+   "causal|seasonal": {
+    "order": [
+     2,
+     0,
+     0
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -637.6059797978744,
+    "strength": 0.8969132932917965,
+    "lb12": 0.14863672583295356,
+    "lb24": 0.164243710332589
+   },
+   "causal|trend": {
+    "order": [
+     1,
+     1,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -1607.510901104891,
+    "strength": 0.0,
+    "lb12": 0.31602284621322274,
+    "lb24": 0.30715927187347714
+   }
+  },
+  "params": {
+   "direct|original|Ridge": {
+    "ridge__alpha": 3.9810717055349776
+   },
+   "direct|original|SVR": {
+    "regressor__svr__C": 580.7086362330987,
+    "regressor__svr__epsilon": 0.11546884697920538,
+    "regressor__svr__gamma": 0.000727831266813932
+   },
+   "direct|original|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.1922206532486979,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "direct|original|XGBoost": {
+    "colsample_bytree": 0.38227229917342315,
+    "learning_rate": 0.013687603551896474,
+    "max_depth": 5,
+    "min_child_weight": 15,
+    "n_estimators": 2967,
+    "reg_lambda": 0.7121980823387989,
+    "subsample": 0.8882999727748027
+   },
+   "direct|original|RandomForest": {
+    "max_depth": 12,
+    "max_features": 0.75,
+    "min_samples_leaf": 1,
+    "n_estimators": 211
+   },
+   "wavelet|seasonal|Ridge": {
+    "ridge__alpha": 3.9810717055349776
+   },
+   "wavelet|seasonal|SVR": {
+    "regressor__svr__C": 25.650834317709887,
+    "regressor__svr__epsilon": 0.011981845126013869,
+    "regressor__svr__gamma": 0.005599223654063347
+   },
+   "wavelet|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.5338651335458617,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     8
+    ]
+   },
+   "wavelet|seasonal|XGBoost": {
+    "colsample_bytree": 0.3178481442771064,
+    "learning_rate": 0.14658506871511703,
+    "max_depth": 1,
+    "min_child_weight": 8,
+    "n_estimators": 1759,
+    "reg_lambda": 37.97106416522782,
+    "subsample": 0.318565786819283
+   },
+   "wavelet|seasonal|RandomForest": {
+    "max_depth": 16,
+    "max_features": 0.33,
+    "min_samples_leaf": 1,
+    "n_estimators": 570
+   },
+   "wavelet|trend|Ridge": {
+    "ridge__alpha": 0.39810717055349776
+   },
+   "wavelet|trend|SVR": {
+    "regressor__svr__C": 108.79145712532251,
+    "regressor__svr__epsilon": 0.050968542639990254,
+    "regressor__svr__gamma": 0.004253370248141297
+   },
+   "wavelet|trend|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.16575829337557343,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     32
+    ]
+   },
+   "wavelet|trend|XGBoost": {
+    "colsample_bytree": 0.8643357923322599,
+    "learning_rate": 0.045131415281778754,
+    "max_depth": 1,
+    "min_child_weight": 12,
+    "n_estimators": 1740,
+    "reg_lambda": 0.25659408735897105,
+    "subsample": 0.6284744217931695
+   },
+   "wavelet|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   },
+   "causal|seasonal|Ridge": {
+    "ridge__alpha": 2.5118864315095824
+   },
+   "causal|seasonal|SVR": {
+    "regressor__svr__C": 6.80780756346786,
+    "regressor__svr__epsilon": 0.006254152586876391,
+    "regressor__svr__gamma": 0.012387743772940753
+   },
+   "causal|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.6723666611319499,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "causal|seasonal|XGBoost": {
+    "colsample_bytree": 0.7963504794955911,
+    "learning_rate": 0.025032234973761336,
+    "max_depth": 1,
+    "min_child_weight": 3,
+    "n_estimators": 1738,
+    "reg_lambda": 0.46767644759328447,
+    "subsample": 0.3919025299312792
+   },
+   "causal|seasonal|RandomForest": {
+    "max_depth": 6,
+    "max_features": 0.5,
+    "min_samples_leaf": 1,
+    "n_estimators": 328
+   },
+   "causal|trend|Ridge": {
+    "ridge__alpha": 1e-06
+   },
+   "causal|trend|SVR": {
+    "regressor__svr__C": 645.1814804569218,
+    "regressor__svr__epsilon": 0.007523892475314572,
+    "regressor__svr__gamma": 0.0009189991710820511
+   },
+   "causal|trend|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.4828316556556039,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     32
+    ]
+   },
+   "causal|trend|XGBoost": {
+    "colsample_bytree": 0.8936057605255641,
+    "learning_rate": 0.08746296159805558,
+    "max_depth": 6,
+    "min_child_weight": 4,
+    "n_estimators": 2695,
+    "reg_lambda": 0.013579680155845203,
+    "subsample": 0.9878024718776355
+   },
+   "causal|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   }
+  },
+  "chosen": {
+   "wavelet": [
+    "MLP",
+    "RandomForest"
+   ],
+   "causal": [
+    "SARIMAX",
+    "XGBoost"
+   ]
+  }
+ },
+ "2022-24": {
+  "orders": {
+   "direct|original": {
+    "order": [
+     2,
+     0,
+     0
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -747.331480800289,
+    "strength": 0.9170584302016351,
+    "lb12": 0.8655643521894927,
+    "lb24": 0.515198392326565
+   },
+   "wavelet|seasonal": {
+    "order": [
+     2,
+     0,
+     1
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -784.4896332730879,
+    "strength": 0.9212048088562722,
+    "lb12": 0.3344560338105193,
+    "lb24": 0.08567400087382246
+   },
+   "wavelet|trend": {
+    "order": [
+     2,
+     1,
+     1
+    ],
+    "seasonal_order": [
+     1,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -2483.6213225420915,
+    "strength": 0.0,
+    "lb12": 5.023802106855958e-20,
+    "lb24": 4.732821031278376e-43
+   },
+   "causal|seasonal": {
+    "order": [
+     2,
+     0,
+     2
+    ],
+    "seasonal_order": [
+     1,
+     1,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -769.9743386594042,
+    "strength": 0.9065021773811659,
+    "lb12": 0.48114033829060554,
+    "lb24": 0.35576962454257294
+   },
+   "causal|trend": {
+    "order": [
+     1,
+     1,
+     1
+    ],
+    "seasonal_order": [
+     0,
+     0,
+     1,
+     12
+    ],
+    "trend": "n",
+    "aic": -1906.9415388291059,
+    "strength": 0.0,
+    "lb12": 0.2957873892411906,
+    "lb24": 0.24499392027731895
+   }
+  },
+  "params": {
+   "direct|original|Ridge": {
+    "ridge__alpha": 6.309573444801943
+   },
+   "direct|original|SVR": {
+    "regressor__svr__C": 25.650834317709887,
+    "regressor__svr__epsilon": 0.011981845126013869,
+    "regressor__svr__gamma": 0.005599223654063347
+   },
+   "direct|original|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.1288454509756694,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "direct|original|XGBoost": {
+    "colsample_bytree": 0.8936057605255641,
+    "learning_rate": 0.08746296159805558,
+    "max_depth": 6,
+    "min_child_weight": 4,
+    "n_estimators": 2695,
+    "reg_lambda": 0.013579680155845203,
+    "subsample": 0.9878024718776355
+   },
+   "direct|original|RandomForest": {
+    "max_depth": 12,
+    "max_features": 0.75,
+    "min_samples_leaf": 1,
+    "n_estimators": 211
+   },
+   "wavelet|seasonal|Ridge": {
+    "ridge__alpha": 3.9810717055349776
+   },
+   "wavelet|seasonal|SVR": {
+    "regressor__svr__C": 93.00119239139784,
+    "regressor__svr__epsilon": 0.0046964971613943935,
+    "regressor__svr__gamma": 0.0024066155737282493
+   },
+   "wavelet|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.5338651335458617,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     8
+    ]
+   },
+   "wavelet|seasonal|XGBoost": {
+    "colsample_bytree": 0.6131648062249931,
+    "learning_rate": 0.05255578289327677,
+    "max_depth": 1,
+    "min_child_weight": 10,
+    "n_estimators": 948,
+    "reg_lambda": 68.53791482368598,
+    "subsample": 0.5487581939303507
+   },
+   "wavelet|seasonal|RandomForest": {
+    "max_depth": 12,
+    "max_features": 0.33,
+    "min_samples_leaf": 2,
+    "n_estimators": 935
+   },
+   "wavelet|trend|Ridge": {
+    "ridge__alpha": 1e-06
+   },
+   "wavelet|trend|SVR": {
+    "regressor__svr__C": 108.79145712532251,
+    "regressor__svr__epsilon": 0.050968542639990254,
+    "regressor__svr__gamma": 0.004253370248141297
+   },
+   "wavelet|trend|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 0.16575829337557343,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     32
+    ]
+   },
+   "wavelet|trend|XGBoost": {
+    "colsample_bytree": 0.7963504794955911,
+    "learning_rate": 0.025032234973761336,
+    "max_depth": 1,
+    "min_child_weight": 3,
+    "n_estimators": 1738,
+    "reg_lambda": 0.46767644759328447,
+    "subsample": 0.3919025299312792
+   },
+   "wavelet|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 686
+   },
+   "causal|seasonal|Ridge": {
+    "ridge__alpha": 3.1622776601683795
+   },
+   "causal|seasonal|SVR": {
+    "regressor__svr__C": 170.62527421800104,
+    "regressor__svr__epsilon": 0.12544051430643316,
+    "regressor__svr__gamma": 0.001547917475869209
+   },
+   "causal|seasonal|MLP": {
+    "regressor__mlpregressor__activation": "tanh",
+    "regressor__mlpregressor__alpha": 1.6723666611319499,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "causal|seasonal|XGBoost": {
+    "colsample_bytree": 0.7869378119471999,
+    "learning_rate": 0.003066396019416707,
+    "max_depth": 8,
+    "min_child_weight": 4,
+    "n_estimators": 2361,
+    "reg_lambda": 1.089853846878525,
+    "subsample": 0.36046388625944886
+   },
+   "causal|seasonal|RandomForest": {
+    "max_depth": 12,
+    "max_features": 0.75,
+    "min_samples_leaf": 1,
+    "n_estimators": 211
+   },
+   "causal|trend|Ridge": {
+    "ridge__alpha": 1e-06
+   },
+   "causal|trend|SVR": {
+    "regressor__svr__C": 645.1814804569218,
+    "regressor__svr__epsilon": 0.007523892475314572,
+    "regressor__svr__gamma": 0.0009189991710820511
+   },
+   "causal|trend|MLP": {
+    "regressor__mlpregressor__activation": "relu",
+    "regressor__mlpregressor__alpha": 0.33042858368124156,
+    "regressor__mlpregressor__hidden_layer_sizes": [
+     4
+    ]
+   },
+   "causal|trend|XGBoost": {
+    "colsample_bytree": 0.8936057605255641,
+    "learning_rate": 0.08746296159805558,
+    "max_depth": 6,
+    "min_child_weight": 4,
+    "n_estimators": 2695,
+    "reg_lambda": 0.013579680155845203,
+    "subsample": 0.9878024718776355
+   },
+   "causal|trend|RandomForest": {
+    "max_depth": null,
+    "max_features": 1.0,
+    "min_samples_leaf": 4,
+    "n_estimators": 507
+   }
+  },
+  "chosen": {
+   "wavelet": [
+    "MLP",
+    "RandomForest"
+   ],
+   "causal": [
+    "MLP",
+    "SARIMA"
+   ]
+  }
+ }
+}
