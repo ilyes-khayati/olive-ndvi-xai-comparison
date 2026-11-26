@@ -23,7 +23,7 @@ with the entries it cites.
 - Dunn, O. J. (1961). Multiple comparisons among means. Journal of the American Statistical Association, 56(293), 52–64.
 - Fisher, A., Rudin, C. & Dominici, F. (2019). All models are wrong, but many are useful: learning a variable's importance by studying an entire class of prediction models simultaneously. Journal of Machine Learning Research, 20(177), 1–81.
 - Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. & Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, 202, 18–27.
-- Gouveia, C. M., Trigo, R. M., Beguería, S. & Vicente-Serrano, S. M. (2017). Drought impacts on vegetation activity in the Mediterranean region: An assessment using remote sensing data and multi-scale drought indicators. Ecological Indicators, 73, 231–240.
+- Gouveia, C. M., Trigo, R. M., Beguería, S. & Vicente-Serrano, S. M. (2017). Drought impacts on vegetation activity in the Mediterranean region: An assessment using remote sensing data and multi-scale drought indicators. Global and Planetary Change, 151, 15–27. https://doi.org/10.1016/j.gloplacha.2016.06.011
 - Guyon, I. & Elisseeff, A. (2003). An introduction to variable and feature selection. Journal of Machine Learning Research, 3, 1157–1182.
 - Hastie, T., Tibshirani, R. & Friedman, J. (2009). The Elements of Statistical Learning (2nd ed.). Springer.
 - Hewamalage, H., Bergmeir, C. & Bandara, K. (2021). Recurrent neural networks for time series forecasting: current status and future directions. International Journal of Forecasting, 37(1), 388–427.
