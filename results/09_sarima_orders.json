@@ -1,0 +1,87 @@
+{
+  "direct|original": {
+    "order": [
+      2,
+      0,
+      0
+    ],
+    "seasonal_order": [
+      1,
+      1,
+      1,
+      12
+    ],
+    "trend": "n",
+    "aic": -747.331480800289,
+    "strength": 0.9170584302016351,
+    "candidates": 36
+  },
+  "wavelet|seasonal": {
+    "order": [
+      2,
+      0,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      1,
+      1,
+      12
+    ],
+    "trend": "n",
+    "aic": -784.074685048254,
+    "strength": 0.921204808856272,
+    "candidates": 36
+  },
+  "wavelet|trend": {
+    "order": [
+      2,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      1,
+      12
+    ],
+    "trend": "n",
+    "aic": -2483.6213225428073,
+    "strength": 0.0,
+    "candidates": 36
+  },
+  "causal|seasonal": {
+    "order": [
+      2,
+      0,
+      2
+    ],
+    "seasonal_order": [
+      1,
+      1,
+      1,
+      12
+    ],
+    "trend": "n",
+    "aic": -770.6567474143071,
+    "strength": 0.9065021773811659,
+    "candidates": 36
+  },
+  "causal|trend": {
+    "order": [
+      1,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      0,
+      1,
+      12
+    ],
+    "trend": "n",
+    "aic": -1906.9415332496988,
+    "strength": 0.0,
+    "candidates": 36
+  }
+}
